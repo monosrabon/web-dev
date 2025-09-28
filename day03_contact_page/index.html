@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>📩 Contact Me</h1>
+    <p>Fill out the form below to get in touch with me.</p>
+
+    <form action="#" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here"></textarea><br><br>
+
+        <label>How did you hear about me?</label><br>
+        <input type="radio" id="friend" name="source" value="friend">
+        <label for="friend">Friend</label><br>
+        <input type="radio" id="social" name="source" value="social">
+        <label for="social">Social Media</label><br>
+        <input type="radio" id="other" name="source" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            Subscribe to newsletter
+        </label><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
