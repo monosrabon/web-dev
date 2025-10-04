@@ -1,0 +1,129 @@
+/* ===== General Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fb;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111827;
+  color: white;
+}
+
+.logo-box {
+  display: inline-block;
+  background: white;
+  color: #111827;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid #00bcd4;
+  box-shadow: 0 4px 8px rgba(0, 188, 212, 0.3);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+header span {
+  color: #00bcd4;
+}
+
+/* ===== Contact Section ===== */
+.contact-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 3rem 10%;
+}
+
+.contact-form,
+.contact-info {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2,
+.contact-info h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+#formStatus {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* ===== Contact Info ===== */
+.contact-info p {
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 5%;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 1.5rem;
+  }
+}
