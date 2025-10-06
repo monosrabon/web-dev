@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="viewer-container">
+    <h1>📸 My Travel Album</h1>
+    
+    <!-- Image Box -->
+    <div class="image-box">
+      <img id="albumImage" src="images/img1.jpg" alt="Travel Photo">
+    </div>
+
+    <!-- Buttons -->
+    <div class="controls">
+      <button onclick="prevImage()">⏮️ Previous</button>
+      <button onclick="nextImage()">⏭️ Next</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
